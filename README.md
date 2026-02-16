@@ -24,4 +24,21 @@
 * Upload HTML files to `/var/www/html`
 5. Testing
 * Test your web application using test data
-
+## How to Run and Access the Application
+* Open a web browser and type URL `http://personaldomain.com` or `http://IP-address`
+###Features
+1. Login
+* Enter a valid username and password and select the "Do It" button
+2. Add Color
+* Once logged in navigate to the "Color To Add" textbox
+* Type in the color you want to add
+* Choose the "Add Color" button to save
+3. Search Color
+* Once logged in navigate to the "Color To Search For" textbox
+* Type in the color you want to search for 
+* Choose the "Search Color" button
+## Assumptions, Limitations, or AI Usage
+* The Digital Ocean droplet is running and accessible
+* The database functions correctly with the application
+* Only LAMP stack was utilized 
+* Limited security features

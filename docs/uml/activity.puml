@@ -1,0 +1,21 @@
+@startuml
+start
+:Open Application;
+:Enter Login and Password;
+if (Authentication successful?) then (yes)
+  :Load color.html;
+  while (Select operation?) is (not Logout)
+    if (Operation?) then (Add Color)
+      :Enter color name;
+      :Save color to database;
+    else (Search Colors)
+      :Enter search query;
+      :Display matching colors;
+    endif
+  endwhile (Logout)
+  :Logout;
+else (no)
+  :Show error message;
+endif
+stop
+@enduml
